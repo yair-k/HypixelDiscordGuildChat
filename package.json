@@ -1,0 +1,30 @@
+{
+  "name": "hypixel-discord-chat-bridge",
+  "version": "1.5.6",
+  "description": "A Hypixel guild chat to Discord Server Bridge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yair-k/HypixelGuildDiscordChat.git"
+  },
+  "keywords": [
+    "hypixel",
+    "discord",
+    "chat",
+    "bridge"
+  ],
+  "author": "big man vragon (vragon@riseup.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yair-k/HypixelGuildDiscordChat/issues"
+  },
+  "homepage": "https://github.com/yair-k/HypixelGuildDiscordChat#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "discord.js-light": "^3.5.0",
+    "mineflayer": "^3.0.0"
+  }
+}

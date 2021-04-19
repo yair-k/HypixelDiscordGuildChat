@@ -2,7 +2,9 @@
 
 A two-way chat bridge between [Hypixel](https://hypixel.net/) guild chat and a [Discord](https://discord.com/) channel. The application utilizes [Discord.js-light](https://github.com/timotejroiko/discord.js-light) for communicating with Discord, and [Mineflayer](https://github.com/PrismarineJS/mineflayer) for communicating with Hypixel.
 
-> This application will login to Hypixel using Mineflayer which is not a normal Minecraft client, this could result in your Minecraft account getting banned from Hypixel, so use this application at your own risk.
+> This application will login to Hypixel using Mineflayer which is not a normal Minecraft client, this shouldn't affect bans or logs but if you have many IP's logged on the server (VPN's and such), be carefull to not risk a 30 day security ban (appealable). 
+
+> BY USING THIS PROGRAM, YOU TAKE FULL RESPONSIBILITY OF YOUR MINECRAFT ACCOUNT. THE CREATOR IS NOT RESPONSIBLE TO ANY MISTAKES YOU MAKE. USE WITH CAUTION.
 
 <hr>
 
@@ -24,55 +26,32 @@ A two-way chat bridge between [Hypixel](https://hypixel.net/) guild chat and a [
 - Git
 - NodeJS >= 14
 - Yarn >= 1.2
-- A Minecraft account
+- A Premium Minecraft account (NFA works)
 
 ### Setup Guide
 
-To get started, clone down the repository using:
+To get started, download and extract the source code onto your main place
 
-    git clone https://github.com/Senither/hypixel-discord-chat-bridge.git
+    https://github.com/yair-k/HypixelDiscordGuildChat/releases/download/1.0/HypixelDiscordGuildCha.zip
 
-Next go into the `hypixel-discord-chat-bridge` folder and install all the dependencies using Yarn.
+Next open CMD and go into the `HypixelDiscordGuildChat` Folder wherever you installed it. Or you can use File explorer and enter `cmd` on the search bar to open the directory directly.
+
+    cd desktop
+    cd HypixelDiscordGuildChat
+               OR
+    cmd (in search bar of File Explorer)
+
+In CMD, install all the dependencies using Yarn.
 
     yarn
 
-While the dependencies are being installed you can copy the configuration file.
+While the dependencies are being installed you can edit the configuration file (`config.json`) with the help of the example one
 
-    cp config.example.json config.json
+    config.example.json:config.json
 
-Next edit and setup the config file with a proper Minecraft and Discord settings, once you're done you can start the app.
+Once you're done all that, you can run the program.
 
     node index.js
-
-## Installation using Docker
-
-### Prerequisites
-
-- Git
-- Docker >= 20
-- A Minecraft account
-
-_Older versions may also work, but have not been tested._
-
-### Setup Guide
-
-To get started, clone down the repository using:
-
-    git clone https://github.com/Senither/hypixel-discord-chat-bridge.git
-
-Next go into the `hypixel-discord-chat-bridge` folder and open the `docker-compose.yml` file, within the file you'll find all the environment variables that can be used to setup the bot, you should fill replace the default values with your real Discord and Minecraft login info, once you're done you can start the bot using Docker.
-
-    docker-compose up -d
-
-And you're done! The command will start a detached instance of the bot, and ensure that the container is deleted after you're done using it.
-
-### Configuration
-
-#### Server
-
-The server is the server the Minecraft client should connect to, by default it will point to Hypixels server so it can be left as-is if the plan is to use the app for Hypixel guild chat, if not then the `host` is the servers IP or hostname, and the `port` is the port the server is running on.
-
-> Note: The port must be a number, Mineflayer expects an integer so you can't wrap the port in quotes or Mineflayer won't create a connection to the Minecraft server.
 
 #### Minecraft
 
@@ -115,7 +94,3 @@ The prefix is the command prefixed used for all the commands in the bot on the D
   - `Bridge bot is online`, `Bridge bot is offline`
 - [ ] Add support for officer chat
   - Allocate a second discord channel to use for two way officer chat.
-
-## License
-
-Hypixel Discord Chat Bridge is open-sourced software licensed under the [MIT License](https://opensource.org/licenses/MIT).

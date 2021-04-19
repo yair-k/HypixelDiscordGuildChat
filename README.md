@@ -8,31 +8,24 @@ A two-way chat bridge between [Hypixel](https://hypixel.net/) guild chat and a [
 
 <hr>
 
-## Table of Content
 
-- [Installation using NodeJS](#installation-using-nodejs)
-  - [Prerequisites](#prerequisites)
-  - [Setup Guide](#setup-guide)
-- [Installation using Docker](#installation-using-docker)
-  - [Prerequisites](#prerequisites-1)
-  - [Setup Guide](#setup-guide-1)
+## Table of Content
+- [Prerequisites](#prerequisites)
+- [Setup Guide](#setup-guide)
 - [Configuration](#configuration)
 - [Roadmap](#roadmap)
 
-## Installation using NodeJS
-
 ### Prerequisites
 
-- Git
-- NodeJS >= 14
-- Yarn >= 1.2
+- NodeJS >= 14 (https://nodejs.org/en/download/)
+- Yarn >= 1.2 (https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 - A Premium Minecraft account (NFA works)
 
 ### Setup Guide
 
 To get started, download and extract the source code onto your main place
 
-    https://github.com/yair-k/HypixelDiscordGuildChat/releases/download/1.0/HypixelDiscordGuildCha.zip
+    https://github.com/yair-k/HypixelDiscordGuildChat/releases/download/1.0/HypixelDiscordGuildChat.zip
 
 Next open CMD and go into the `HypixelDiscordGuildChat` Folder wherever you installed it. Or you can use File explorer and enter `cmd` on the search bar to open the directory directly.
 
